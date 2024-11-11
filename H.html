@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMP MODS 09</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo geral do site */
+        body {
+            font-family: 'Urbanist', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000000, #0044cc);
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animação de estrelas */
+        @keyframes star-flicker {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: star-flicker 1s infinite;
+        }
+
+        /* Criando estrelas no fundo */
+        .star:nth-child(odd) {
+            animation-duration: 1.5s;
+        }
+
+        .star:nth-child(even) {
+            animation-duration: 2s;
+        }
+
+        .star-1 { width: 3px; height: 3px; top: 10%; left: 20%; }
+        .star-2 { width: 4px; height: 4px; top: 20%; left: 50%; }
+        .star-3 { width: 2px; height: 2px; top: 50%; left: 80%; }
+        .star-4 { width: 5px; height: 5px; top: 70%; left: 30%; }
+        .star-5 { width: 3px; height: 3px; top: 90%; left: 90%; }
+        .star-6 { width: 4px; height: 4px; top: 30%; left: 70%; }
+
+        /* Cabeçalho */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #ff9800;
+        }
+
+        /* Seção Sobre Nós */
+        #sobre-nos {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        #sobre-nos h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #sobre-nos p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Vídeos com rolagem */
+        .videos-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            margin: 40px 0;
+            padding: 10px 0;
+        }
+
+        .video {
+            width: 300px;
+            height: 180px;
+            border: 2px solid #ff9800;
+            margin-right: 20px;
+        }
+
+        /* Botão de redirecionamento para Facebook */
+        .profile-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #4267B2;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .profile-button:hover {
+            background-color: #365899;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        /* Seção de perfil */
+        #perfil {
+            margin-top: 40px;
+        }
+
+        /* Seção de vídeos */
+        #videos {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Estrelas no fundo -->
+    <div class="star star-1"></div>
+    <div class="star star-2"></div>
+    <div class="star star-3"></div>
+    <div class="star star-4"></div>
+    <div class="star star-5"></div>
+    <div class="star star-6"></div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>SAMP MODS 09</h1>
+    </header>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>
+            O SAMP MODS 09 é um canal dedicado a fornecer mods, dicas e atualizações para o jogo SAMP Multiplayer. Nosso objetivo é criar conteúdo que ajude a comunidade a aproveitar ainda mais a experiência de jogar no servidor, com tutoriais detalhados, mods inovadores e suporte aos jogadores. Junte-se a nós e faça parte dessa comunidade apaixonada!
+        </p>
+    </section>
+
+    <!-- Seção de perfil com link para o Facebook -->
+    <section id="perfil">
+        <a href="https://www.facebook.com/profile.php?id=61560877004129&mibextid=ZbWKwL" class="profile-button" target="_blank">Visite o Perfil no Facebook</a>
+    </section>
+
+    <!-- Seção de vídeos recentes -->
+    <section id="videos" class="section">
+        <h2>Vídeos Recentes</h2>
+        <div class="videos-container">
+            <!-- Vídeo 1 -->
+            <div class="video">
+                <a href="https://youtube.com/shorts/fLU-NHqh51U?si=iiRLkgcPh84tNWF2" target="_blank">
+                    <iframe src="https://www.youtube.com/embed/fLU-NHqh51U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 SAMP MODS 09</p>
+    </footer>
+
+</body>
+</html>
